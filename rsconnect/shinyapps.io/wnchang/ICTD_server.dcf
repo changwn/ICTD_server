@@ -1,0 +1,12 @@
+name: ICTD_server
+title: ICTD_server
+username:
+account: wnchang
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1057300
+bundleId: 2275681
+url: https://wnchang.shinyapps.io/ICTD_server/
+when: 1564453240.25042
+asMultiple: FALSE
+asStatic: FALSE
