@@ -94,8 +94,28 @@ server <- function(input, output) {
 #     return(myinput + 1)
 # 
 # }
+
 library("ICTD")
 
+#install dependent pkg
+# if (!requireNamespace("BiocManager", quietly = TRUE))
+#     install.packages("BiocManager")
+# BiocManager::install("impute")
+# BiocManager::install("GO.db")
+# BiocManager::install("sva")
+# BiocManager::install("preprocessCore")
+# library("impute")
+# library("GO.db")
+# library("sva")
+# library("preprocessCore")
+
+
+# rforge <- "http://r-forge.r-project.org"
+# install.packages("estimate", repos=rforge, dependencies=TRUE)
+# 
+# #install ICTD
+# install.packages("devtools")
+# devtools::install_github("zy26/ICTD")
 
 
 #----------------------------------------
