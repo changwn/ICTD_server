@@ -3,26 +3,25 @@ title: "about"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+The novel deconvolution method, namely Inference of Cell Types and Deconvolution (ICTD), aim to provide substantially new capabilities for transcriptomics based characterization of a tissue microenvironment, including (1) maximizing the resolution in identifying cell and sub types that truly exists in a tissue, (2) identifying the most reliable marker genes for each cell type, which are tissue microenvironment and data set specific, (3) handling the highly co-presented cell types, and (4) inferring functional variations specific to one or several cell types. 
 
-## R Markdown
+ICTD is empowered by (i) rigorously derived mathematical condition of identifiable cell type and cell type specific functions in tissue transcriptomics data and (ii) a semi supervised approach to maximize the knowledge transfer of cell type and functional marker genes identified in single cell or bulk cell data in the analysis of tissue data, and (iii) a novel unsupervised approach to minimize the bias led by training data. Application of ICTD on single cell simulated and real tissue data validated that the method has a consistent high performs great on the data of different species, tissue microenvironment, and experimental platform. ICTD performens great on prediction accuracy, the resolution of identifiable cell, capability in identifying unknown sub cell types, and assessment of cell type specific functions.
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+### R package
+The user friendly R package with demo is published on github. https://github.com/zy26/ICTD
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+Please contact wennan Chang(wnchang@iu.edu) for technical or other issue.
 
-```{r cars}
-summary(cars)
-```
 
-## Including Plots
+### How to cite
 
-You can also embed plots, for example:
+Chang, W., Wan, C., Lu, X., Tu, S.W., Zhang, Y., Richardson, B., Sun, Y., Hou, Y., Zhang, X., Zang, Y. and Zhang, A., 2019. A semi-supervised approach for cell phenotypic and functional estimation in tissue microenvironment. bioRxiv, p.426593. doi: https://doi.org/10.1101/426593
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+### BDR Lab 
+For more tools and algorithms: https://zcslab.github.io/
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+### Contact information
+
+Chi Zhang(czhang87@iu.edu), Department of Medical and Molecular Genetics and Center for Computational Biology and Bioinformatics, Indiana University School of Medicine.
+
+Sha Cao(shacao@iu.edu), Department of Biostatistics, Indiana University School of Medicine.

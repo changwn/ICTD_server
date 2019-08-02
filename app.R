@@ -6,6 +6,7 @@ library(shiny)
 library(datasets)
 # Define UI for application that draws a histogram
 ui <- navbarPage("ICTD",
+        theme = shinythemes::shinytheme("cerulean"),
         tabPanel("Do deconvolute",
             fluidPage(    
             
@@ -48,14 +49,12 @@ ui <- navbarPage("ICTD",
         ),
         tabPanel("Instruction",
             fluidPage(
-                h3("Instruction of ICTD :)"),
-                includeMarkdown("about.Rmd")
+                includeMarkdown("instruction.Rmd")
             )
         ),
         tabPanel("About",
              fluidPage(
-                 p("The novel deconvolution method, namely Inference of Cell Types and Deconvolution (ICTD) ")
-                
+                 includeMarkdown("about.Rmd")
             )   
             
         )
