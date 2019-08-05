@@ -1,0 +1,23 @@
+---
+title: "bdrlab"
+output: html_document
+---
+
+### Our other tools & BDR Lab 
+For more tools and algorithms: https://zcslab.github.io/
+
+**LTMGSCA**: Left Truncated Mixture Gaussian Model based Single cell RNA-seq data Analysis
+* Paper 1: https://www.biorxiv.org/content/early/2018/09/29/430009 (Nucleic Acids Research)
+* Paper 2: https://www.biorxiv.org/content/10.1101/181362v1
+* GitHub link: https://github.com/zy26/LTMGSCA
+
+**M3S**: A comprehensive model selection for multi-modal single-cell RNA sequencing data
+* Paper is accepted by ICIBM2019 and BMC Bioinformatics 
+* GitHub link: https://github.com/zy26/M3S
+
+**QUBIC2**: A novel biclustering algorithm for large-scale bulk RNA-sequencing and single-cell RNA-sequencing data analysis
+* Paper: https://www.biorxiv.org/content/10.1101/409961v1 (Under review at Nucleic Acids Research)
+* Tutorial link: http://bmbl.sdstate.edu/github/qubic2/qubic2_tutorial.html
+
+**BRIC**: biclustering-based gene regulation inference and cell type prediction from single-cell RNA-Sequencing data
+* Tutorial link: http://htmlpreview.github.io/?https://github.com/zy26/BRIC/blob/master/vignette/BRIC_Rpackage.html

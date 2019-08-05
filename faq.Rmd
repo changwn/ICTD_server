@@ -1,0 +1,9 @@
+---
+title: "faq"
+output: html_document
+---
+
+## Frequently Asked Questions
+
+Coming soon :)
+
