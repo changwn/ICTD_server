@@ -2,6 +2,8 @@ library(shiny)
 library(markdown)
 library(shinythemes)
 library(datasets)
+library(shinybusy)
+
 # Define UI for application that draws a histogram
 navbarPage("ICTD",
                  theme = shinytheme("cerulean"),
@@ -50,6 +52,8 @@ navbarPage("ICTD",
                                   tabPanel('Cell type proportion', 
                                            downloadLink('downloadResult', 'Download predicted cell type proportion.'),
                                            helpText('(click download result before RUN ICTD)'),
+                                           #add_busy_spinner(spin = "cube-grid", position = 'full-page'),
+                                           add_busy_gif(src = "images/busy4.gif", height = 70, width = 70, position = 'full-page'),
                                            tableOutput("contents")
                                   ),
                                   tabPanel('Cell type marker genes', 
