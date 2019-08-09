@@ -4,6 +4,7 @@ library(shinythemes)
 library(datasets)
 library(shinybusy)
 
+
 # Define UI for application that draws a histogram
 navbarPage("ICTD",
                  theme = shinytheme("cerulean"),
@@ -46,14 +47,14 @@ navbarPage("ICTD",
                                   tags$li("Handling the highly co-presented cell types")
                                 ),
                                 tags$img(src="images/mainpage1.png", 
-                                         height=400),
+                                         width="100%"),
                                 
                                 tabsetPanel(
                                   tabPanel('Cell type proportion', 
                                            downloadLink('downloadResult', 'Download predicted cell type proportion.'),
                                            helpText('(click download result before RUN ICTD)'),
                                            #add_busy_spinner(spin = "cube-grid", position = 'full-page'),
-                                           add_busy_gif(src = "images/busy4.gif", height = 70, width = 70, position = 'full-page'),
+                                           add_busy_gif(src = "images/busy13.gif", height = 70, width = 70, position = 'full-page'),
                                            tableOutput("contents")
                                   ),
                                   tabPanel('Cell type marker genes', 
@@ -75,7 +76,7 @@ navbarPage("ICTD",
                  tabPanel("About",
                           fluidPage(
                             h2("Pipeline of ICTD", style="color: STEELBLUE; font-size: 25px; margin: 0px"),
-                            tags$img(src="images/Fig1.png",width=600),
+                            tags$img(src="images/Fig1.png",width='100%'),
                             includeMarkdown("about.Rmd")
                           )
 
