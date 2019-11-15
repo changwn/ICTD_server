@@ -3,7 +3,11 @@ title: "faq"
 output: html_document
 ---
 
-## Frequently Asked Questions
+### Frequently Asked Questions
+
+**Why I received a message 'Disconnected from server'?** <br/>
+By default, an application will close an idle connection after 15 minutes of inactivity. This means if you open an application and do not interact with it for 15 minutes, you will see a disconnect (grey screen).<br/>
+**Solution**: refresh the webpage or click the F5 on the keyboard.
 
 
 
@@ -34,3 +38,5 @@ https://hub.docker.com/r/wnchang/ictd
 Using the Docker image could void the conflict issue that R version and several R packages version confict. 
 
 For more details about the Docker, please see Docker documentation page https://docs.docker.com/.
+
+

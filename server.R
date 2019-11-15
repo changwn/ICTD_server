@@ -62,8 +62,13 @@ server <- function(input, output) {
     
     #select gene based on the tissue type
     print(dim(immune_cell_uni_table0_GS)) #double check current table dim 
-    data.ictd <- data.ictd[intersect(rownames(data.ictd),rownames(immune_cell_uni_table0_GS)), 1:30]
-    
+    if(is.null(inFile)){
+      data.ictd <- data.ictd[intersect(rownames(data.ictd),rownames(immune_cell_uni_table0_GS)), 1:30]
+    }else{
+      input_dim <- dim(data.ictd)[2]
+      data.ictd <- data.ictd[intersect(rownames(data.ictd),rownames(immune_cell_uni_table0_GS)), 1:input_dim]
+    }
+      
     ictd_list2 <- ICTD(data.ictd)
     # give special answer for default dataset
     if(is.null(inFile)){
@@ -91,7 +96,7 @@ server <- function(input, output) {
   output$contents <- renderTable({
     
     prop1 <- ictd_result()[[1]]
-    return(prop1[,1:6])
+    return(prop1[,1:5])
     
   }, rownames = T)
   # output$marker <- renderTable({
@@ -172,7 +177,11 @@ server <- function(input, output) {
   })
   output$plot2 <- renderPlot({
     vv <- ictd_result()[[1]][,input$sampleX]
-    barplot(vv,main="User specific sample 's cell proportion plot",xlab="Cell type",col = "lightblue",width = 0.2)
+    #barplot(vv,main="User specific sample 's cell proportion plot",xlab="Cell type",col = "lightblue")
+    df <- data.frame(cell=names(vv), va=vv)
+    ggplot(df, aes(x=cell, y=va, fill=cell)) +
+      geom_bar(stat="identity")+theme_minimal()+
+      scale_fill_brewer(palette="Dark2")
   })
   
   #-----------------function part----------
