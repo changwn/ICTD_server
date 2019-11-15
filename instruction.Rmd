@@ -4,4 +4,6 @@ output: html_document
 ---
 ## ICTD Web Application Instruction
 
-Coming soon :)
+1. Please refresh webpage or click F5 to make sure R shiny works fine.
+
+2. 
