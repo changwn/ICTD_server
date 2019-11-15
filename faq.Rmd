@@ -5,5 +5,32 @@ output: html_document
 
 ## Frequently Asked Questions
 
-Coming soon :)
 
+
+### Questions & Problems
+
+If you have any questions or problems when using ICTD, please feel free to open a new issue [here](https://github.com/zy26/ICTD/issues). We will fix the new issue ASAP.  You can also email the maintainers and authors below.
+
+- [Wennan Chang](https://zcslab.github.io/people/wennan/)
+(wnchang@iu.edu)
+
+PhD candidate at BDR group, Indiana University School of Medicine
+
+- [Chi Zhang](https://medicine.iu.edu/departments/genetics/faculty/27057/zhang-chi/)
+(czhang87@iu.edu)
+
+Assistant Professor
+
+Department of Medical & Molecular Genetics, Indiana University School of Medicine
+
+
+
+### Dependencies
+
+We also provide a Docker image to recreate the compute environment. See the Dockerfile for more details.
+
+https://hub.docker.com/r/wnchang/ictd
+
+Using the Docker image could void the conflict issue that R version and several R packages version confict. 
+
+For more details about the Docker, please see Docker documentation page https://docs.docker.com/.

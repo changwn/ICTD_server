@@ -94,7 +94,7 @@ navbarPage("ICTD",
                  tabPanel("About",
                           fluidPage(
                             h2("Pipeline of ICTD", style="color: STEELBLUE; font-size: 25px; margin: 0px"),
-                            tags$img(src="images/Fig1.png",width='100%'),
+                            tags$img(src="images/Fig1_new.png",width='100%'),
                             includeMarkdown("about.Rmd")
                           )
 

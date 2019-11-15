@@ -5,8 +5,8 @@ account: wnchang
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 1057300
-bundleId: 2304964
+bundleId: 2591056
 url: https://wnchang.shinyapps.io/ICTD_server/
-when: 1565374240.12081
+when: 1573799864.63234
 asMultiple: FALSE
 asStatic: FALSE
